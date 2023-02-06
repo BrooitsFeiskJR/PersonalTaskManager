@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_task_manager/util/icon_container_widget.dart';
 
 class HeaderProject extends StatelessWidget {
   const HeaderProject({super.key});
@@ -10,29 +11,13 @@ class HeaderProject extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            iconContainer(Icons.arrow_back_ios, 22),
-            iconContainer(Icons.edit_outlined, 22),
+            IconContainer(
+                icon: Icons.arrow_back_ios, size: 22, color: Colors.grey[600]),
+            IconContainer(
+                icon: Icons.edit_outlined, size: 22, color: Colors.grey[600]),
           ],
         ),
       ],
-    );
-  }
-
-  Widget iconContainer(IconData icon, double size) {
-    return Container(
-      alignment: Alignment.center,
-      height: 50,
-      width: 50,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: (Colors.grey[400])!,
-          )),
-      child: Icon(
-        icon,
-        size: size,
-        color: Colors.grey[600],
-      ),
     );
   }
 }

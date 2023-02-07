@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:personal_task_manager/features/home/widgets/calender_widget.dart';
 import 'package:personal_task_manager/features/home/widgets/header_home_screen_widget.dart';
-import 'package:personal_task_manager/util/icon_container_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,20 +19,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 25,
               ),
-              Text(
-                "NOVEMBER",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 45,
-                ),
-              ),
-              Text(
-                "2022",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 45,
-                ),
-              ),
+              Calendar(),
             ],
           ),
         ),

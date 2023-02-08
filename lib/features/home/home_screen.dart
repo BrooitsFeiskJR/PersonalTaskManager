@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             children: const [
               HeaderHomeScreen(),
               SizedBox(
-                height: 25,
+                height: 35,
               ),
               Calendar(),
             ],
